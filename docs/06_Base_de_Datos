@@ -1,0 +1,44 @@
+ Diseño de Base de Datos
+
+ Tabla Competidor
+
+| Campo | Tipo |
+|---------|---------|
+| id_competidor | INTEGER |
+| nombre | TEXT |
+| apellido | TEXT |
+| edad | INTEGER |
+| peso | REAL |
+| categoria | TEXT |
+
+---
+
+ Tabla Torneo
+
+| Campo | Tipo |
+|---------|---------|
+| id_torneo | INTEGER |
+| nombre | TEXT |
+| modalidad | TEXT |
+| fecha | DATE |
+
+---
+
+ Tabla Enfrentamiento
+
+| Campo | Tipo |
+|---------|---------|
+| id_enfrentamiento | INTEGER |
+| id_torneo | INTEGER |
+| competidor1 | INTEGER |
+| competidor2 | INTEGER |
+| ganador | INTEGER |
+| ronda | INTEGER |
+
+---
+
+ Relaciones
+
+- Un torneo posee varios enfrentamientos.
+- Un enfrentamiento posee dos competidores.
+- Un enfrentamiento tiene un ganador.
